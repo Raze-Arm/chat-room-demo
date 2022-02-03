@@ -1,0 +1,36 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    grid-auto-rows: 275px;
+    column-gap: 2%;
+    row-gap: 1%;
+}
+.video-grid h4 {
+    margin: 5px 0 5px 0px;
+    text-align: center;
+
+}
+video {
+    width: inherit !important;
+    height: inherit !important;
+    object-fit: cover;
+    /*object-fit: fill;*/
+    box-shadow: rgba(14, 30, 37, 0.15) 0px 0px 5px 3px;
+
+}
+.video-grid__item {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    /*object-fit: fill !important;*/
+
+}
+
+.fullscreen {
+    left: 0!important;
+    top: 0!important;
+    height: 100vh !important;
+    width: 100vw !important;
+    position: fixed!important;
+    z-index: 1000;
+}
